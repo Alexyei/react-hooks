@@ -25,6 +25,7 @@ const UseRefExample: FC = () => {
     useEffect(()=>{
         prevName.current = name
         console.log(prevName)
+        console.log('EFFECT')
     },[name])
 
     function handleClick(){
@@ -37,6 +38,7 @@ const UseRefExample: FC = () => {
         setName(e.target.value)
     }
 
+    console.log('RENDER')
     return (
         <>
             <input ref={inputRef} value={name} onChange={handleChange}/>
