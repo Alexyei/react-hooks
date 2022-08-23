@@ -8,6 +8,8 @@
 ## Дополнительные
 4. useContext
 5. useRef
+6. useReducer
+7. useCallback
 
 useReducer
 useCallback
