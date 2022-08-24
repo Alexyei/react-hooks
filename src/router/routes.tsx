@@ -7,6 +7,7 @@ import UseRefExample from "../components/build-in-hooks/useRef";
 import UseReducerExample from "../components/build-in-hooks/useReducer";
 import UseCallbackExample from "../components/build-in-hooks/useCallback";
 import UseLayoutEffectExample from "../components/useLayoutEffect";
+import UseImperativeHandleExample from "../components/build-in-hooks/useImperativeHandle";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -18,5 +19,6 @@ export const publicRoutes= [
     {path: '/reducer', element: (<UseReducerExample/>), linkName: 'useReducer'},
     {path: '/callback', element: (<UseCallbackExample/>), linkName: 'useCallback'},
     {path: '/layout-effect', element: (<UseLayoutEffectExample/>), linkName: 'useLayoutEffect'},
+    {path: '/imperative-handle', element: (<UseImperativeHandleExample/>), linkName: 'useImperativeHandle'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]
