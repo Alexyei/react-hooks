@@ -1,6 +1,6 @@
 useDebugValue служит для отображения дополнительной информации напротив кастомных хуков в [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 1. без useDebugValue
-   ![alt text](../../../../assets/useDebugValue/Без%20useDebugValue.PNG Заголовок)   
+   ![alt text](../../../../assets/useDebugValue/Без%20useDebugValue.PNG)   
 2. c useDebugValue
 
 useDebugValue можно вызывать несколько раз, тогда значения будут в массиве.
