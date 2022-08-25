@@ -1,8 +1,11 @@
 useDebugValue служит для отображения дополнительной информации напротив кастомных хуков в [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 1. без useDebugValue
+   
    ![alt картинка без useDebugValue](../../../../assets/useDebugValue/Без%20useDebugValue.PNG "без useDebugValue")   
+   
 2. c useDebugValue
-   <img src="../../../../assets/useDebugValue/С%20useDebugValue.PNG" style="width:800px;height:300px;object-fit: cover;">
+   
+   ![alt картинка c useDebugValue](../../../../assets/useDebugValue/С%20useDebugValue.PNG "с useDebugValue")
 
 useDebugValue можно вызывать несколько раз, тогда значения будут в массиве.
 ```typescript jsx
