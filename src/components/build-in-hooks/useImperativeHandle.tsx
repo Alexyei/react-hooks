@@ -1,6 +1,7 @@
 import {ChangeEvent, createRef, FC, forwardRef, useImperativeHandle, useRef, useState} from "react";
 
 //useImperativeHandle нужен чтобы изменить ref на свобственный объект, чтобы управлять логикой ref во внутреннем компннете, а во внешний передовать только удобный интерфейс
+//синтаксисис очень похож на useMemo: первый аргумент колбек возвращющий значение, второй - массив зависимостей
 const UseImperativeHandleExample: FC = () => {
     const [value, setValue] = useState('')
     const [open, setOpen] = useState(false)

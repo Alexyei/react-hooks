@@ -6,8 +6,9 @@ import UseContextRefactoringExample from "../components/build-in-hooks/useContex
 import UseRefExample from "../components/build-in-hooks/useRef";
 import UseReducerExample from "../components/build-in-hooks/useReducer";
 import UseCallbackExample from "../components/build-in-hooks/useCallback";
-import UseLayoutEffectExample from "../components/useLayoutEffect";
+import UseLayoutEffectExample from "../components/build-in-hooks/useLayoutEffect";
 import UseImperativeHandleExample from "../components/build-in-hooks/useImperativeHandle";
+import UseDebugValueExample from "../components/build-in-hooks/useDebugValue";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -20,5 +21,6 @@ export const publicRoutes= [
     {path: '/callback', element: (<UseCallbackExample/>), linkName: 'useCallback'},
     {path: '/layout-effect', element: (<UseLayoutEffectExample/>), linkName: 'useLayoutEffect'},
     {path: '/imperative-handle', element: (<UseImperativeHandleExample/>), linkName: 'useImperativeHandle'},
+    {path: '/debug-value', element:(<UseDebugValueExample/>), linkName: 'useDebugValue'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

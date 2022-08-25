@@ -1,5 +1,5 @@
 import {createRef, FC, useEffect, useLayoutEffect, useRef, useState} from "react";
-import Clock from "./build-in-hooks/components/useLayoutEffect/Clock";
+import Clock from "./components/useLayoutEffect/Clock";
 
 //UseLayoutEffect является аналогом useEffect
 const UseLayoutEffectExample: FC = () => {

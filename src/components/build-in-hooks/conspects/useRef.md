@@ -75,3 +75,5 @@ function setStateNumber(newNumber){
     } 
 }
 ```
+
+createRef и useRef, почти идентичны, но createRef создаёт ссылку при каждом рендеринге, а useRef использует одну и ту же.
