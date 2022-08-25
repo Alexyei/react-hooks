@@ -1,7 +1,8 @@
 useDebugValue служит для отображения дополнительной информации напротив кастомных хуков в [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 1. без useDebugValue
-   ![alt text](../../../../assets/useDebugValue/Без%20useDebugValue.PNG)   
+   ![alt картинка без useDebugValue](../../../../assets/useDebugValue/Без%20useDebugValue.PNG "без useDebugValue")   
 2. c useDebugValue
+   <img src="../../../../assets/useDebugValue/С%20useDebugValue.PNG" style="width:800px;height:300px;object-fit: cover;">
 
 useDebugValue можно вызывать несколько раз, тогда значения будут в массиве.
 ```typescript jsx
@@ -9,6 +10,8 @@ useDebugValue(value)
 useDebugValue(value,v=>longFormatting(v))
 useDebugValue('Hi')
 ```
+![alt картинка массив useDebugValue](../../../../assets/useDebugValue/Массив.PNG "массив useDebugValue")
+
 Если значение передаваемое в useDebugValue вычисляется долго, то это может приводить к фризам интерфейса. Хотя React DevTools может быть даже не установлен.
 Чтобы избежать фризов интерфейса, и вычислять значение только в React DevTools следует передать вторым параметром колбек.
 ```typescript jsx
