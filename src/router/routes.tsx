@@ -9,6 +9,7 @@ import UseCallbackExample from "../components/build-in-hooks/useCallback";
 import UseLayoutEffectExample from "../components/build-in-hooks/useLayoutEffect";
 import UseImperativeHandleExample from "../components/build-in-hooks/useImperativeHandle";
 import UseDebugValueExample from "../components/build-in-hooks/useDebugValue";
+import UseDeferredValueExample from "../components/build-in-hooks/useDeferredValue";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -22,5 +23,6 @@ export const publicRoutes= [
     {path: '/layout-effect', element: (<UseLayoutEffectExample/>), linkName: 'useLayoutEffect'},
     {path: '/imperative-handle', element: (<UseImperativeHandleExample/>), linkName: 'useImperativeHandle'},
     {path: '/debug-value', element:(<UseDebugValueExample/>), linkName: 'useDebugValue'},
+    {path: '/deferred-value', element: (<UseDeferredValueExample/>), linkName: 'useDeferredValue'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]
