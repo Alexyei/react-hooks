@@ -10,6 +10,7 @@ import UseLayoutEffectExample from "../components/build-in-hooks/useLayoutEffect
 import UseImperativeHandleExample from "../components/build-in-hooks/useImperativeHandle";
 import UseDebugValueExample from "../components/build-in-hooks/useDebugValue";
 import UseDeferredValueExample from "../components/build-in-hooks/useDeferredValue";
+import UseTransitionExample from "../components/build-in-hooks/useTransition";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -24,5 +25,6 @@ export const publicRoutes= [
     {path: '/imperative-handle', element: (<UseImperativeHandleExample/>), linkName: 'useImperativeHandle'},
     {path: '/debug-value', element:(<UseDebugValueExample/>), linkName: 'useDebugValue'},
     {path: '/deferred-value', element: (<UseDeferredValueExample/>), linkName: 'useDeferredValue'},
+    {path: '/transition', element: (<UseTransitionExample/>), linkName: 'useTransition'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

@@ -21,7 +21,7 @@ const List:FC<{input:string}>=({input})=>{
             l.push(<div key={i}>{input}</div>)
         }
         return (<>{l}</>);
-    },[input])
+    },[deferredInput])
 
     useEffect(()=>{
         console.log(`Input: ${input}\nDeferredValue: ${deferredInput}`)
