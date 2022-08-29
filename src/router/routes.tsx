@@ -11,6 +11,7 @@ import UseImperativeHandleExample from "../components/build-in-hooks/useImperati
 import UseDebugValueExample from "../components/build-in-hooks/useDebugValue";
 import UseDeferredValueExample from "../components/build-in-hooks/useDeferredValue";
 import UseTransitionExample from "../components/build-in-hooks/useTransition";
+import UseIdExample from "../components/build-in-hooks/useId";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -26,5 +27,6 @@ export const publicRoutes= [
     {path: '/debug-value', element:(<UseDebugValueExample/>), linkName: 'useDebugValue'},
     {path: '/deferred-value', element: (<UseDeferredValueExample/>), linkName: 'useDeferredValue'},
     {path: '/transition', element: (<UseTransitionExample/>), linkName: 'useTransition'},
+    {path: '/id',element: (<UseIdExample/>), linkName: 'useId'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

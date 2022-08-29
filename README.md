@@ -15,14 +15,15 @@
 10. useDebugValue
 
 ## Новые хуки в React 18
-11. useDeferredValue
-12. useTransition
-13. useId
+11. useId
+### Хуки предназначеные для устронения фризов интерфейса
+12. useDeferredValue
+13. useTransition
+
+### Библиотечные хуки
 14. useSyncExternalStore
 15. useInsertionEffect
 
-useSyncExternalStore
-useInsertionEffect
 
 useQuery
 useSWR

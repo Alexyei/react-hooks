@@ -1,5 +1,5 @@
-Хуки useDeferredValue и useTransition появились в React 18 и используются для  повышения отзывчивости интерфейса.
-useDeferredValue является аналогом debounce, useTransition аналогом async function.
+Хуки useDeferredValue и useTransition появились в React 18 и используются для  повышения отзывчивости интерфейса (эти два хука, следует использовать ТОЛЬКО если у вас наблюдается фризы интерфейса).
+useDeferredValue является аналогом debounce, useTransition аналогом async function (useTransition использует конкурентный режим рендеринга VDOM появивщийся в React 18).
 Проведём экспремент будем вводить в поле ввода 123456789, а затем отображать длинный список.
 Применем различные методы useTransition, useCustomTransition
 

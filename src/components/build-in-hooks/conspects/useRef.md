@@ -77,3 +77,15 @@ function setStateNumber(newNumber){
 ```
 
 createRef и useRef, почти идентичны, но createRef создаёт ссылку при каждом рендеринге, а useRef использует одну и ту же.
+
+
+### Какие компоненты являются неуправляемыми?
+Когда мы устанавливаем сами значения компонента, он становится управляемым.
+``` typescript tsx
+//неуправляемые компоненты
+<input type='text'/>
+<input type='text' onChange={handler}/>
+//управляемые компоненты
+<input value={value} type='text'/>
+<input value={value} type='text' onChange={handler}/>
+```
