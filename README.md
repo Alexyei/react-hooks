@@ -20,9 +20,9 @@
 12. useDeferredValue
 13. useTransition
 
-### Библиотечные хуки
-14. useSyncExternalStore
-15. useInsertionEffect
+### Библиотечные хуки (предназначены для авторов пополярных react библиотек)
+14. useSyncExternalStore (redux)
+15. useInsertionEffect ([css-in-js library](https://github.com/andreipfeiffer/css-in-js) )
 
 
 useQuery

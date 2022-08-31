@@ -12,11 +12,14 @@ import UseDebugValueExample from "../components/build-in-hooks/useDebugValue";
 import UseDeferredValueExample from "../components/build-in-hooks/useDeferredValue";
 import UseTransitionExample from "../components/build-in-hooks/useTransition";
 import UseIdExample from "../components/build-in-hooks/useId";
+import UseMemoClassExample from "../components/build-in-hooks/class-example/useMemo";
+import UseSyncExternalStoreExample from "../components/build-in-hooks/useSyncExternalStore";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
     {path: '/effect', element: (<UseEffectExample/>), linkName: 'useEffect'},
     {path: '/memo',element:(<UseMemoExample/>), linkName: 'useMemo'},
+    {path:'/memo-class', element: (<UseMemoClassExample/>), linkName: 'useMemo'},
     {path: '/context', element: (<UseContextExample/>), linkName: 'useContext'},
     {path: '/context-refactoring', element: (<UseContextRefactoringExample />), linkName: 'useContextRefactoring'},
     {path: '/ref', element: (<UseRefExample/>), linkName: 'useRef'},
@@ -28,5 +31,6 @@ export const publicRoutes= [
     {path: '/deferred-value', element: (<UseDeferredValueExample/>), linkName: 'useDeferredValue'},
     {path: '/transition', element: (<UseTransitionExample/>), linkName: 'useTransition'},
     {path: '/id',element: (<UseIdExample/>), linkName: 'useId'},
+    {path: '/store', element: (<UseSyncExternalStoreExample/>), linkName: 'useSyncExternalStore'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

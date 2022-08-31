@@ -1,4 +1,4 @@
-import {FC, useId} from "react";
+import {Component, FC, memo, useId} from "react";
 
 const UseIdExample: FC = () => {
     return (<>

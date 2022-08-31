@@ -1,9 +1,7 @@
-import {createContext, FC, useEffect} from "react";
-import FunctionContextComponent from "./components/useContext/FunctionContextComponent";
-import ClassContextComponent from "./components/useContext/ClassContextComponent";
-import FunctionContextComponentUseContext from "./components/useContext/FunctionContextComponentUseContext";
+import { FC, useEffect} from "react";
 import ThemeProvider, {useTheme} from "./components/useContext/ThemeContext";
 import UserProvider, {useUser} from "./components/useContext/UserContext";
+import CounterProvider, {useCounterContext} from "./components/useContext/CountContext";
 
 // export const ThemeContext = createContext(false);
 
@@ -28,12 +26,27 @@ const UseContextRefactoringExample: FC = () => {
                 <InnerComponent/>
                     <InnerComponent2/>
                 </UserProvider>
+                <CounterProvider>
+                    <Counter/>
+                    <Counter/>
+                    <Counter/>
+                </CounterProvider>
                 {/*<FunctionContextComponent/>*/}
                 {/*<FunctionContextComponentUseContext/>*/}
                 {/*<ClassContextComponent/>*/}
             </ThemeProvider>
         </>
     );
+}
+
+const Counter: FC = () => {
+    const [count, increment, decrement] = useCounterContext()
+
+    return (<div>
+        <button onClick={decrement}>DECREMENT</button>
+        <button onClick={increment}>INCREMENT</button>
+        <span>{count}</span>
+    </div>)
 }
 
 const InnerComponent: FC = () => {
