@@ -14,6 +14,8 @@ import UseTransitionExample from "../components/build-in-hooks/useTransition";
 import UseIdExample from "../components/build-in-hooks/useId";
 import UseMemoClassExample from "../components/build-in-hooks/class-example/useMemo";
 import UseSyncExternalStoreExample from "../components/build-in-hooks/useSyncExternalStore";
+import UseLocalStorageExample from "../components/custom/useLocalStorage";
+import UseSessionStorageExample from "../components/custom/useSessionStorage";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -32,5 +34,7 @@ export const publicRoutes= [
     {path: '/transition', element: (<UseTransitionExample/>), linkName: 'useTransition'},
     {path: '/id',element: (<UseIdExample/>), linkName: 'useId'},
     {path: '/store', element: (<UseSyncExternalStoreExample/>), linkName: 'useSyncExternalStore'},
+    {path: '/local-storage', element: (<UseLocalStorageExample/>),linkName: 'useLocalStorage'},
+    {path: '/session-storage', element: (<UseSessionStorageExample/>),linkName: 'useSessionStorage'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

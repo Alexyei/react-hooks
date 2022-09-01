@@ -10,6 +10,17 @@ const UseStateExample: FC = () => {
 
     const [arrayObjects, setArrayObjects] = useState<{id: number}[]>([])
 
+    function test(){
+        console.log("RUN TEST")
+        return 0;
+    }
+
+    const [testValue, setTestValue] = useState(()=>{
+        console.log('Данные колбек будет выполняться только при монтировании (при re-render не будет)')
+        console.log('Используйте функцию инитиализатор, если хотите чтобы начальное значение не пересчитывалось при re-render')
+        test();
+    })
+
     function handleAddElementToArray(){
         setArray([...array,array.length+1])
     }

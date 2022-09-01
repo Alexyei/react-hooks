@@ -22,8 +22,12 @@
 
 ### Библиотечные хуки (предназначены для авторов пополярных react библиотек)
 14. useSyncExternalStore (redux)
-15. useInsertionEffect ([css-in-js library](https://github.com/andreipfeiffer/css-in-js) )
+15. useInsertionEffect ([css-in-js library](https://github.com/andreipfeiffer/css-in-js) ) Данный хук не будет арссмотрен, так как в самой докомуентации написанно, что он только для создатилей библиотеки.
 
+## Кастомные хуки
+1. useLocalStorage (аналог useState для localStorage)
+2. useSessionStorage (аналог useState для sessionStorage)
+3. useUpdateLogger (вывод переменной консоль при её изменении)
 
 useQuery
 useSWR
