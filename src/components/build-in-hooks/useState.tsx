@@ -3,6 +3,13 @@ import {FC, useState} from "react";
 //hook useState создаёт реактивную переменную
 const UseStateExample: FC = () => {
     const [count, setCount] = useState(0)
+
+    //сохраняем колбек
+    const [callback, setCallback] = useState(()=>()=>setCount(0))
+    // меняем колбек
+    // setCallback(()=>()=>setCount(1000))
+
+
     //Указание точного типа для typescript
     const [array, setArray] = useState<number[]>([])
 

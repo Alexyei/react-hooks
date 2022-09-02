@@ -28,6 +28,12 @@
 1. useLocalStorage (аналог useState для localStorage)
 2. useSessionStorage (аналог useState для sessionStorage)
 3. useUpdateLogger (вывод переменной консоль при её изменении)
+4. useToggle (аналог useState для булевой переменной)
+5. useTimeout (управление setTimeout)
+6. useInterval (управление setInterval)
+7. useDebounce (аналог useDeferredValue, только с ручной настройкой delay и выбором зависимостей)
+8. useUpdateEffect (аналог useEffect, но срабатывает только при обновлении (не рабоатет при монтировании))
+9. useArray (аналог useState для массива)
 
 useQuery
 useSWR
