@@ -6,7 +6,7 @@ function getSavedValue<T,>(key:string, initialValue:T){
     const savedValue = sessionStorage.getItem(key);
     if (savedValue) return JSON.parse(savedValue) as T;
 
-    if (initialValue instanceof Function) return initialValue;
+    if (initialValue instanceof Function) return initialValue();
     return initialValue;
 }
 

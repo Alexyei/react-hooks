@@ -22,6 +22,11 @@ import UseIntervalExample from "../components/custom/useInterval";
 import UseDebounceExample from "../components/custom/useDebounce";
 import UseUpdateEffectExample from "../components/custom/useUpdateEffect";
 import UseArrayExample from "../components/custom/useArray";
+import UsePreviousExample from "../components/custom/usePrevious";
+import UseStateWithHistoryExample from "../components/custom/useStateWithHistory";
+import UseStorageExample from "../components/custom/useStorage";
+import UseAsyncExample from "../components/custom/useAsync";
+import UseFetchExample from "../components/custom/useFetch";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -50,5 +55,10 @@ export const publicRoutes= [
     {path: '/debounce', element: (<UseDebounceExample/>),linkName: 'useDebounce'},
     {path: '/update', element: (<UseUpdateEffectExample/>),linkName: 'useUpdateEffect'},
     {path: '/array', element: (<UseArrayExample/>), linkName: 'useArray'},
+    {path: '/previous', element: (<UsePreviousExample/>), linkName: 'usePrevious'},
+    {path: '/history',element: (<UseStateWithHistoryExample/>), linkName: 'useHistory'},
+    {path: '/storage',element: (<UseStorageExample/>), linkName: 'useStorage'},
+    {path: '/async', element: (<UseAsyncExample/>), linkName: 'useAsync'},
+    {path: '/fetch',element: (<UseFetchExample/>), linkName: 'useFetch'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

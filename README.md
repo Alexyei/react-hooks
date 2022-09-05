@@ -34,6 +34,11 @@
 7. useDebounce (аналог useDeferredValue, только с ручной настройкой delay и выбором зависимостей)
 8. useUpdateEffect (аналог useEffect, но срабатывает только при обновлении (не рабоатет при монтировании))
 9. useArray (аналог useState для массива)
+10. usePrevious (сохраняет предыдущие значение useState)
+11. useStateWithHistory (сохраняет историю изменений useState)
+12. useStorage (рефакторинг useLocalStorage и useSessionStorage)
+13. useAsync (индикатор выполнения, ошибка и значение, асинхронного колбека)
+14. useFetch (useAsync для fetch)
 
 useQuery
 useSWR
