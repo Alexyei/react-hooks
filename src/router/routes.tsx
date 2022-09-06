@@ -27,6 +27,9 @@ import UseStateWithHistoryExample from "../components/custom/useStateWithHistory
 import UseStorageExample from "../components/custom/useStorage";
 import UseAsyncExample from "../components/custom/useAsync";
 import UseFetchExample from "../components/custom/useFetch";
+import UseScriptExample from "../components/custom/useScript";
+import UseDeepCompareEffect from "../components/custom/useDeepCompareEffect";
+import UseOutsideClickHandlerExample from "../components/custom/useOutsideClickHandler";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -60,5 +63,8 @@ export const publicRoutes= [
     {path: '/storage',element: (<UseStorageExample/>), linkName: 'useStorage'},
     {path: '/async', element: (<UseAsyncExample/>), linkName: 'useAsync'},
     {path: '/fetch',element: (<UseFetchExample/>), linkName: 'useFetch'},
+    {path: '/script',element: (<UseScriptExample/>),linkName: 'useScript'},
+    {path: '/deep-compare-effect',element: (<UseDeepCompareEffect/>),linkName: 'useDeepCompareEffect'},
+    {path: '/outside-click',element: (<UseOutsideClickHandlerExample/>),linkName: 'useOutsideClickHandler'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

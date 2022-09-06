@@ -39,6 +39,9 @@
 12. useStorage (рефакторинг useLocalStorage и useSessionStorage)
 13. useAsync (индикатор выполнения, ошибка и значение, асинхронного колбека)
 14. useFetch (useAsync для fetch)
+15. useScript (используется для загрузки скритов например jquery)
+16. useDeepCompareEffect (аналог useEffect только глубокое сравнение зависимостей)
+17. useOutsideClickHandler (обратчик нажатия вне заданного элемента)
 
 useQuery
 useSWR
