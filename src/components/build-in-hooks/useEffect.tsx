@@ -28,6 +28,13 @@ const UseEffectExample:FC = ()=>{
             console.log("Не реагирую unmount")
         }
     },[])
+
+    //СРАБАТЫВАЕТ ТОЛЬКО ПРИ МОНТИРОВАНИИ
+    //useEffect(()=>{},[])
+
+    //СРАБАТЫВАЕТ ТОЛЬКО ПРИ ЛЮБОМ ИЗМЕНЕНИИ
+    //useEffect(()=>{})
+
     // useEffect(()=>{
     //     console.log("Компонент смонтирвоан или измененён")
     //     document.title = `Вы кликнули: ${count+count2} раз`

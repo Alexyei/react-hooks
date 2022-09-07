@@ -30,6 +30,9 @@ import UseFetchExample from "../components/custom/useFetch";
 import UseScriptExample from "../components/custom/useScript";
 import UseDeepCompareEffect from "../components/custom/useDeepCompareEffect";
 import UseOutsideClickHandlerExample from "../components/custom/useOutsideClickHandler";
+import UseEventListenerExample from "../components/custom/useEventListener";
+import UseOnScreenExample from "../components/custom/useOnScreen";
+import UseWindowSizeExample from "../components/custom/useWindowSize";
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -66,5 +69,8 @@ export const publicRoutes= [
     {path: '/script',element: (<UseScriptExample/>),linkName: 'useScript'},
     {path: '/deep-compare-effect',element: (<UseDeepCompareEffect/>),linkName: 'useDeepCompareEffect'},
     {path: '/outside-click',element: (<UseOutsideClickHandlerExample/>),linkName: 'useOutsideClickHandler'},
+    {path: '/event-listener',element: (<UseEventListenerExample/>),linkName: 'useEventListener'},
+    {path: '/on-screen',element: (<UseOnScreenExample/>), linkName: 'useOnScreenExample'},
+    {path: '/window-size',element: (<UseWindowSizeExample/>),linkName: 'useWindowSizeExample'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

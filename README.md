@@ -42,6 +42,10 @@
 15. useScript (используется для загрузки скритов например jquery)
 16. useDeepCompareEffect (аналог useEffect только глубокое сравнение зависимостей)
 17. useOutsideClickHandler (обратчик нажатия вне заданного элемента)
+18. useEventListener (добавить обработчик события на выбранный элемент)
+19. useOnScreen (определяет видим ли элемент на стрице (IntersectionObserver))
+20. useWindowSize (отслеживает размеры window)
+
 
 useQuery
 useSWR
