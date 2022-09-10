@@ -33,6 +33,12 @@ import UseOutsideClickHandlerExample from "../components/custom/useOutsideClickH
 import UseEventListenerExample from "../components/custom/useEventListener";
 import UseOnScreenExample from "../components/custom/useOnScreen";
 import UseWindowSizeExample from "../components/custom/useWindowSize";
+import UseMediaQueryExample from "../components/custom/useMediaQuery";
+import UseGeolocationExample from "../components/custom/useGeolacation";
+import UseStateWithValidation from "../components/custom/useStateWithValidation";
+import UseSize from "../components/custom/useSize";
+import UseEffectOnce from "../components/custom/useEffectOnce";
+
 
 export const publicRoutes= [
     {path: '/',element:(<UseStateExample/>),linkName:'useState'},
@@ -72,5 +78,10 @@ export const publicRoutes= [
     {path: '/event-listener',element: (<UseEventListenerExample/>),linkName: 'useEventListener'},
     {path: '/on-screen',element: (<UseOnScreenExample/>), linkName: 'useOnScreenExample'},
     {path: '/window-size',element: (<UseWindowSizeExample/>),linkName: 'useWindowSizeExample'},
+    {path: '/query', element: (<UseMediaQueryExample/>), linkName: 'useMediaQuery'},
+    {path: '/geolocation', element: (<UseGeolocationExample/>), linkName: 'useGeolocationExample'},
+    {path: '/validation',element: (<UseStateWithValidation/>), linkName: 'useStateWithValidation'},
+    {path: '/size', element: (<UseSize/>), linkName: 'useSize'},
+    {path: '/once',element: (<UseEffectOnce/>), linkName: 'useEffectOnce'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

@@ -9,11 +9,11 @@ export function useEventListener(event: string, callback: (e: any) => void, elem
     }, [callback])
 
     useEffect(() => {
-        console.log("effect")
+        // console.log("effect")
         const handler = (e:any) => callbackRef.current(e)
         element.addEventListener(event, handler)
         return () => {
-            console.log("unmount");
+            // console.log("unmount");
             element.removeEventListener(event, handler)
         };
     }, [event, element])
@@ -39,7 +39,7 @@ function useEventListener2(event: string, callback: (e: any) => void, element: E
 }
 
 // DONT WORK
-export function useEventListener3(event: string, callback: (e: any) => void, element: EventTarget = document) {
+function useEventListener3(event: string, callback: (e: any) => void, element: EventTarget = document) {
     // const callbackRef = useRef(callback)
     //
     // useEffect(() => {

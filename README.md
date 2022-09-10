@@ -45,7 +45,11 @@
 18. useEventListener (добавить обработчик события на выбранный элемент)
 19. useOnScreen (определяет видим ли элемент на стрице (IntersectionObserver))
 20. useWindowSize (отслеживает размеры window)
-
+21. useMediaQuery (добавление media-запросов к элементам (window.matchMedia))
+22. useGeolocation (определить геолокацию пользователя (navigator.geolocation))
+23. useStateWithValidation (аналог useState но с валидацией ввода)
+24. useSize (определить размер и позициию на экране элемента (ResizeObserver))
+25. useEffectOnce (аналог useEffect, выполняющийся только один раз при монтировании)
 
 useQuery
 useSWR
