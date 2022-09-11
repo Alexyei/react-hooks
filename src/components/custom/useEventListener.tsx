@@ -1,17 +1,19 @@
 import {createRef, FC, RefObject, useCallback, useEffect, useRef, useState} from "react";
 
 
-export function useEventListener(event: string, callback: (e: any) => void, element: EventTarget = document) {
+export function useEventListener(event: string, callback: (e: any) => void, element: EventTarget = document ,useCapture = false) {
     const callbackRef = useRef(callback)
 
+    callbackRef.current = callback
     useEffect(() => {
         callbackRef.current = callback
     }, [callback])
 
     useEffect(() => {
         // console.log("effect")
+        if (element == null) return
         const handler = (e:any) => callbackRef.current(e)
-        element.addEventListener(event, handler)
+        element.addEventListener(event, handler,useCapture)
         return () => {
             // console.log("unmount");
             element.removeEventListener(event, handler)

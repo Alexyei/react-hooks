@@ -50,6 +50,8 @@
 23. useStateWithValidation (аналог useState но с валидацией ввода)
 24. useSize (определить размер и позициию на экране элемента (ResizeObserver))
 25. useEffectOnce (аналог useEffect, выполняющийся только один раз при монтировании)
+26. useClickOutside (рефакторинг useOutsideClickHandler, приоритет этому хуку)
+27. useDarkMode (управление цветовой темой сайта)
 
 useQuery
 useSWR

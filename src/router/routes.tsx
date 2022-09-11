@@ -38,6 +38,8 @@ import UseGeolocationExample from "../components/custom/useGeolacation";
 import UseStateWithValidation from "../components/custom/useStateWithValidation";
 import UseSize from "../components/custom/useSize";
 import UseEffectOnce from "../components/custom/useEffectOnce";
+import UseClickOutsideExample from "../components/custom/useClickOutside";
+import UseDarkModeExample from "../components/custom/useDarkMode";
 
 
 export const publicRoutes= [
@@ -83,5 +85,7 @@ export const publicRoutes= [
     {path: '/validation',element: (<UseStateWithValidation/>), linkName: 'useStateWithValidation'},
     {path: '/size', element: (<UseSize/>), linkName: 'useSize'},
     {path: '/once',element: (<UseEffectOnce/>), linkName: 'useEffectOnce'},
+    {path: '/click-outside',element: (<UseClickOutsideExample/>),linkName: 'useClickOutside'},
+    {path: '/dark-mode',element: (<UseDarkModeExample/>),linkName: 'useDarkMode'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]
