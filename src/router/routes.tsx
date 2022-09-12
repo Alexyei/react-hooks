@@ -40,6 +40,9 @@ import UseSize from "../components/custom/useSize";
 import UseEffectOnce from "../components/custom/useEffectOnce";
 import UseClickOutsideExample from "../components/custom/useClickOutside";
 import UseDarkModeExample from "../components/custom/useDarkMode";
+import UseCopyToClipboard from "../components/custom/useCopyToClipboard";
+import UseCookie from "../components/custom/useCookie";
+import UseTranslation from "../components/custom/useTranslation";
 
 
 export const publicRoutes= [
@@ -87,5 +90,8 @@ export const publicRoutes= [
     {path: '/once',element: (<UseEffectOnce/>), linkName: 'useEffectOnce'},
     {path: '/click-outside',element: (<UseClickOutsideExample/>),linkName: 'useClickOutside'},
     {path: '/dark-mode',element: (<UseDarkModeExample/>),linkName: 'useDarkMode'},
+    {path: '/copy-to-clipboard',element: (<UseCopyToClipboard/>),linkName: 'useCopyToClipboard'},
+    {path: '/cookie',element: (<UseCookie/>),linkName: 'useCookie'},
+    {path: '/translate',element: (<UseTranslation/>),linkName: 'useTranslation'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]

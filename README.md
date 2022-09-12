@@ -52,6 +52,9 @@
 25. useEffectOnce (аналог useEffect, выполняющийся только один раз при монтировании)
 26. useClickOutside (рефакторинг useOutsideClickHandler, приоритет этому хуку)
 27. useDarkMode (управление цветовой темой сайта)
+28. useCopyToClipboard (используется для копирования текста в буфер обмена)
+29. useCookie (используется для работы с Cookie)
+30. useTranslation (используется для перевода фраз на разные языки)
 
 useQuery
 useSWR
