@@ -43,6 +43,9 @@ import UseDarkModeExample from "../components/custom/useDarkMode";
 import UseCopyToClipboard from "../components/custom/useCopyToClipboard";
 import UseCookie from "../components/custom/useCookie";
 import UseTranslation from "../components/custom/useTranslation";
+import UseOnlineStatus from "../components/custom/useOnlineStatus";
+import UseRenderCount from "../components/custom/useRenderCount";
+import UseDebugInformation from "../components/custom/useDebugInformation";
 
 
 export const publicRoutes= [
@@ -93,5 +96,8 @@ export const publicRoutes= [
     {path: '/copy-to-clipboard',element: (<UseCopyToClipboard/>),linkName: 'useCopyToClipboard'},
     {path: '/cookie',element: (<UseCookie/>),linkName: 'useCookie'},
     {path: '/translate',element: (<UseTranslation/>),linkName: 'useTranslation'},
+    {path: '/online', element: (<UseOnlineStatus/>), linkName: 'useOnlineStatus'},
+    {path: '/render-count',element: (<UseRenderCount/>),linkName: 'useRenderCount'},
+    {path: '/debug-info',element: (<UseDebugInformation/>),linkName: 'useDebugInformation'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]
