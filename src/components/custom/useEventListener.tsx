@@ -10,8 +10,9 @@ export function useEventListener(event: string, callback: (e: any) => void, elem
     }, [callback])
 
     useEffect(() => {
-        // console.log("effect")
+        // console.log(element)
         if (element == null) return
+        // console.log("DOESNOT return")
         const handler = (e:any) => callbackRef.current(e)
         element.addEventListener(event, handler,useCapture)
         return () => {

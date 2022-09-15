@@ -46,6 +46,8 @@ import UseTranslation from "../components/custom/useTranslation";
 import UseOnlineStatus from "../components/custom/useOnlineStatus";
 import UseRenderCount from "../components/custom/useRenderCount";
 import UseDebugInformation from "../components/custom/useDebugInformation";
+import UseHover from "../components/custom/useHover";
+import UseLongPress from "../components/custom/useLongPress";
 
 
 export const publicRoutes= [
@@ -99,5 +101,7 @@ export const publicRoutes= [
     {path: '/online', element: (<UseOnlineStatus/>), linkName: 'useOnlineStatus'},
     {path: '/render-count',element: (<UseRenderCount/>),linkName: 'useRenderCount'},
     {path: '/debug-info',element: (<UseDebugInformation/>),linkName: 'useDebugInformation'},
+    {path: '/hover',element: (<UseHover/>),linkName: 'useHover'},
+    {path: '/long-press',element: (<UseLongPress/>),linkName: 'useLongPress'},
     {path: '*',element:(<div>404 NOT FOUND</div>)}
 ]
