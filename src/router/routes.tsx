@@ -48,6 +48,8 @@ import UseRenderCount from "../components/custom/useRenderCount";
 import UseDebugInformation from "../components/custom/useDebugInformation";
 import UseHover from "../components/custom/useHover";
 import UseLongPress from "../components/custom/useLongPress";
+import UseSyncExternalStoreExample2 from "../components/build-in-hooks/useSyncExternalStore2";
+import UseSyncExternalStoreExample3 from "../components/build-in-hooks/useSyncExternalStore3";
 
 
 export const publicRoutes= [
@@ -69,6 +71,8 @@ export const publicRoutes= [
 
     //CUSTOM
     {path: '/store', element: (<UseSyncExternalStoreExample/>), linkName: 'useSyncExternalStore'},
+    {path: '/store2', element: (<UseSyncExternalStoreExample2/>), linkName: 'useSyncExternalStore2'},
+    {path: '/store3', element: (<UseSyncExternalStoreExample3/>), linkName: 'useSyncExternalStore3'},
     {path: '/local-storage', element: (<UseLocalStorageExample/>),linkName: 'useLocalStorage'},
     {path: '/session-storage', element: (<UseSessionStorageExample/>),linkName: 'useSessionStorage'},
     {path: '/toggle', element: (<UseToggleExample/>),linkName: 'useToggle'},
