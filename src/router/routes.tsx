@@ -50,6 +50,10 @@ import UseHover from "../components/custom/useHover";
 import UseLongPress from "../components/custom/useLongPress";
 import UseSyncExternalStoreExample2 from "../components/build-in-hooks/useSyncExternalStore2";
 import UseSyncExternalStoreExample3 from "../components/build-in-hooks/useSyncExternalStore3";
+import UseBatteryExampleReactUse from "../components/react-use/sensors/useBattery";
+import UseGeolocationExampleReactUse from "../components/react-use/sensors/useGeolocation";
+import UseHoverExampleReactUse from "../components/react-use/sensors/useHover";
+import UseHoverDirtyExampleReactUse from "../components/react-use/sensors/useHoverDirty";
 
 
 export const publicRoutes= [
@@ -107,5 +111,11 @@ export const publicRoutes= [
     {path: '/debug-info',element: (<UseDebugInformation/>),linkName: 'useDebugInformation'},
     {path: '/hover',element: (<UseHover/>),linkName: 'useHover'},
     {path: '/long-press',element: (<UseLongPress/>),linkName: 'useLongPress'},
-    {path: '*',element:(<div>404 NOT FOUND</div>)}
+    {path: '*',element:(<div>404 NOT FOUND</div>)},
+
+    //REACT-USe
+    {path: '/battery-ru', element: (<UseBatteryExampleReactUse/>), linkName: 'useBattery (react-use)'},
+    {path: '/geolocation-ru', element: (<UseGeolocationExampleReactUse/>), linkName: 'useGeolocation (react-use)'},
+    {path: '/hover-ru', element: (<UseHoverExampleReactUse/>), linkName: 'useHover (react-use)'},
+    {path: '/hover-dirty-ru', element: (<UseHoverDirtyExampleReactUse/>), linkName: 'useHoverDirty (react-use)'},
 ]
