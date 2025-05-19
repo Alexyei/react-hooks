@@ -1,8 +1,23 @@
 .App {
   text-align: center;
+  display:flex;
 }
 .dark-mode{
   background-color: teal;
 }
 
+.main{
+  flex: 1;
+}
+.side{
+  width:200px;
+}
 
+.links{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}

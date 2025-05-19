@@ -12,8 +12,8 @@ export const AppRouter:FC = ()=>{
 
 export const Links:FC = ()=>{
     return (
-        <>
+        <div className="links">
             {publicRoutes.filter((el)=>el.linkName!=undefined).map((el)=><Link key={el.path} to={el.path}>{el.linkName}</Link>)}
-        </>
+        </div>
     )
 }

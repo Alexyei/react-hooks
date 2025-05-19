@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
-import {AppRouter} from "./router/AppRouter";
+import {AppRouter, Links} from "./router/AppRouter";
 
 function App() {
   return (
     <div className="App">
-      <AppRouter></AppRouter>
+      <div className="main">
+        <AppRouter></AppRouter>
+      </div>
+      <div className="side">
+        <Links></Links>
+      </div>
     </div>
   );
 }
